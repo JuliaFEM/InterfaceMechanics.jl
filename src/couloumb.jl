@@ -97,10 +97,10 @@ function integrate_interface!(interface::Couloumb)
             dslip2 = 0.0
             dfrictional_energy_ = 0.0
             jacobian_[1,1] = dp_func(h)
-            jacobian_[2,1] = (traction[2]+dtau1)/tau_cr*mu
-            jacobian_[2,2] = k*jacobian_[1,1]
-            jacobian_[3,1] = (traction[3]+dtau2)/tau_cr*mu
-            jacobian_[3,3] = k*jacobian_[1,1]
+            jacobian_[2,1] = (traction[2]+dtau1)/tau_cr*mu*jacobian_[1,1]
+            jacobian_[2,2] = k
+            jacobian_[3,1] = (traction[3]+dtau2)/tau_cr*mu*jacobian_[1,1]
+            jacobian_[3,3] = k
         end
         return [dp, dtau1, dtau2], [dslip1, dslip2], dfrictional_energy_, jacobian_
     end
