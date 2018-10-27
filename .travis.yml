@@ -1,12 +1,10 @@
 language: julia
 
 os:
-  - osx
   - linux
 
 julia:
-  - 0.6
-  - 0.7
+  - 1.0
   - nightly
 
 # # Uncomment the following lines to allow failures on nightly julia
@@ -24,4 +22,4 @@ notifications:
 
 after_success:
   - julia -e 'cd(Pkg.dir("Example")); Pkg.add("Coverage"); using Coverage; Coveralls.submit(Coveralls.process_folder())';
-#  - julia -e 'cd(Pkg.dir("Example")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())';
+#  - julia -e 'cd(Pkg.dir("InterfaceMechanics")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())';
