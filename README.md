@@ -5,6 +5,8 @@
 [![][pkg-1.0-img]][pkg-1.0-url]
 [![][coveralls-img]][coveralls-url]
 [![][issues-img]][issues-url]
+[![][appveyor-img]][appveyor-url]
+
 
 
 
@@ -29,3 +31,6 @@
 [pkg-0.7-url]: http://pkg.julialang.org/?pkg=InterfaceMechanics&ver=0.7
 [pkg-1.0-img]: http://pkg.julialang.org/badges/InterfaceMechanics_1.0.svg
 [pkg-1.0-url]: http://pkg.julialang.org/?pkg=InterfaceMechanics&ver=1.0
+
+[appveyor-img]: https://ci.appveyor.com/api/projects/status/fma963oc9rg9qxn4?svg=true
+[appveyor-url]: https://ci.appveyor.com/project/JuliaFEM/interfacemechanics-jl
