@@ -1,0 +1,6 @@
+authors = ["mantyant <mantyant@gmail.com>"]
+name = "InterfaceMechanics"
+uuid = "d2649932-d9e0-11e8-27ac-0193def238a7"
+version = "0.1.0"
+
+[deps]
